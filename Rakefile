@@ -22,6 +22,8 @@ require 'rubygems'
 require 'chef'
 require 'json'
 
+ENV['PATH'] = "#{Dir.getwd}/bin:#{ENV['PATH']}" if File.directory?("#{Dir.getwd}/bin")
+
 # Load constants from rake config file.
 require File.join(File.dirname(__FILE__), 'config', 'rake')
 
