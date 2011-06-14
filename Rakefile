@@ -1,4 +1,4 @@
-#
+# -*- ruby -*-
 # Rakefile for Chef Server Repository
 #
 # Author:: Adam Jacob (<adam@opscode.com>)
