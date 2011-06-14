@@ -63,3 +63,8 @@ task :bundle_cookbook, :cookbook do |t, args|
 
   FileUtils.rm_rf temp_dir
 end
+
+# local tasks
+Dir['tasks/*.rake'].sort.each do |f|
+  load f
+end
