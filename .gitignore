@@ -2,3 +2,5 @@
 .bundle/
 bin/
 config/local*
+.chef/
+.rvmrc
