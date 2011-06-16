@@ -36,3 +36,6 @@ TOPDIR = File.expand_path(File.join(File.dirname(__FILE__), ".."))
 
 # Where to store certificates generated with ssl_cert
 CADIR = File.expand_path(File.join(TOPDIR, "certificates"))
+
+LOCAL_SETTINGS = File.expand_path(File.join(File.dirname(__FILE__), "local_rake.rb"))
+load LOCAL_SETTINGS if File.exists?(LOCAL_SETTINGS)
